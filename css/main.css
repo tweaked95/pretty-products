@@ -1,7 +1,85 @@
 html {
   box-sizing: border-box;
+  color: #000;
+  font-family: Karma, serif;
+  line-height: 1.5;
+  background-color: #fff;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+main > div {
+  border: 3px solid #987ffa;
+  border-radius: 6px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-family: Oswald, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0;
+  color: #6f00e7;
+  text-align: center;
+}
+
+p {
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+div > img {
+  max-width: 15em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links img {
+  margin: 0 .25em;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.links > li:nth-of-type(1) {
+  background: #6700e7;
+  border-radius: 3em;
+  color: #fff;
+  padding: .5em 1.5em .7em;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Oswald, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links > li:nth-of-type(1) img {
+  margin-left: 0;
 }
